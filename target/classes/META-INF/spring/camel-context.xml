@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+          http://www.springframework.org/schema/beans 
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://camel.apache.org/schema/spring 
+          http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<camelContext id="camel5" xmlns="http://camel.apache.org/schema/spring">
+		<routeBuilder ref="myFirstRoute" />
+		<routeBuilder ref="jsonExampleRoute" />
+		<routeBuilder ref="contentBasedRouterRoute" />
+ 	</camelContext>
+
+	<bean id="myFirstRoute" class="uk.co.manifesto.camel.MyFirstRoute" />
+	<bean id="jsonExampleRoute" class="uk.co.manifesto.camel.JsonExampleRoute" />
+	<bean id="contentBasedRouterRoute" class="uk.co.manifesto.camel.ContentBasedRouterRoute" />
+	
+</beans>
