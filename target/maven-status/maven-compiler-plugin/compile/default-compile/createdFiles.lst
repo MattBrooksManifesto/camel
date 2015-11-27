@@ -1,4 +1,5 @@
 uk/co/manifesto/camel/JsonExampleRoute.class
+uk/co/manifesto/camel/ComponentExampleRoute.class
 uk/co/manifesto/camel/classes/Json.class
 uk/co/manifesto/camel/ContentBasedRouterRoute.class
 uk/co/manifesto/camel/MyFirstRoute.class
