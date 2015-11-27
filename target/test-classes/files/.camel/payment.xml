@@ -1,0 +1,4 @@
+<Payment>
+	<Currency>eur</Currency>
+	<Amount>100</Amount>
+</Payment>

@@ -7,7 +7,7 @@ public class ComponentExampleRoute  extends RouteBuilder{
 	@Override
 	public void configure() throws Exception {
 		
-		from("file:src/test/resources/files")
+		from("file:src/test/resources/files?noop=true")
 			.convertBodyTo(String.class)
 			.to("mock:component");
 	}
