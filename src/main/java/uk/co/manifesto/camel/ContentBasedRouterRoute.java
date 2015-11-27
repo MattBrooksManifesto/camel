@@ -7,7 +7,7 @@ public class ContentBasedRouterRoute extends RouteBuilder{
 	@Override
 	public void configure() throws Exception {
 		
-		from("direct:cbr")
+		from("file:src/test/resources/payment?noop=true")
 			
 			.choice()
 				.when(xpath("Payment/Currency = 'eur'")).to("mock:euro")
